@@ -35,7 +35,7 @@ export class CdkpipelinesDemoPipelineStack extends Stack {
     }));
 
     const preprod = new CdkpipelinesDemoStage(this, 'PreProd', {
-      env: { account: 'ACCOUNT1', region: 'us-east-2' }
+      env: { account: '915271087263', region: 'us-west-2' }
     });
     const preprodStage = pipeline.addStage(preprod, {
       post: [
